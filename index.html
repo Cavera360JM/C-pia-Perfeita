@@ -67,7 +67,7 @@
 <body>
     <div class="login-container">
         <h1>Login - Burger King</h1>
-        <form id="loginForm" onsubmit="return validateForm()">
+        <form id="loginForm">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
@@ -81,20 +81,5 @@
 
         <div class="error-message" id="errorMessage"></div>
     </div>
-
-    <script>
-        function validateForm() {
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-
-            if (username === 'example' && password === 'password') {
-                alert('Login successful!');
-                return true;
-            } else {
-                document.getElementById('errorMessage').innerHTML = 'Invalid username or password';
-                return false;
-            }
-        }
-    </script>
 </body>
 </html>
