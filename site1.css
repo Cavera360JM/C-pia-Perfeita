@@ -1,4 +1,5 @@
-/* Reset básico e estilos globais */
+
+  /* Reset básico e estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     color: #333;
 }
 
+/* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
@@ -53,6 +55,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Menu de navegação */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -106,6 +109,28 @@ nav ul li:hover a {
     display: block; 
 }
 
+/* Banner com degradê */
+.banner {
+    height: 300px;
+    background: linear-gradient(to right, #0066cc, #e0ff00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.highlight {
+    color: yellow; /* Destaca "Vôlei de Praia" em amarelo */
+}
+
+/* Estilo da seção principal de notícias */
 main {
     padding: 20px;
     background-color: white;
@@ -114,6 +139,70 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para a seção de notícias */
+.news-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px 0;
+    width: 48%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+
+.news-card-content {
+    padding: 15px;
+}
+
+.news-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0066cc;
+}
+
+.news-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news-card .news-date {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.news-card .news-author {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Responsividade para a grade de notícias */
+@media (max-width: 768px) {
+    .news-card {
+        width: 100%;
+    }
+}
+
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -152,33 +241,7 @@ footer {
 .footer-contact p {
     margin-bottom: 10px;
 }
-
-/* Estilo do banner com degradê */
-.banner {
-    height: 300px;
-    background: linear-gradient(to right, #0066cc, #e0ff00);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-}
-
-.banner-text {
-    position: absolute;
-    text-align: center;
-    font-size: 24px;
-}
-
-/* Estilos adicionais para a seção da banner */
-.highlight {
-    color: yellow; /* Destaca "Vôlei de Praia" em amarelo */
-}
-
-
-
-
-   
+ 
 
 
 
