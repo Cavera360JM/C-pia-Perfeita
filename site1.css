@@ -1,3 +1,4 @@
+/* Reset básico e estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +12,40 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #0066cc;
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.header-right {
     text-align: center;
 }
 
@@ -29,7 +61,7 @@ nav ul {
 }
 
 nav ul li {
-    position: relative; /* Isso é necessário para o dropdown funcionar */
+    position: relative; 
     margin: 0 15px;
 }
 
@@ -45,7 +77,7 @@ nav ul li:hover a {
 }
 
 .dropdown-content {
-    display: none; /* Inicialmente, o conteúdo do dropdown não aparece */
+    display: none; 
     position: absolute;
     background-color: white;
     min-width: 150px;
@@ -69,9 +101,9 @@ nav ul li:hover a {
     background-color: #ddd;
 }
 
-/* Torna o dropdown visível quando o mouse passa sobre o item pai */
+/* Dropdown aparece ao passar o mouse */
 .dropdown:hover .dropdown-content {
-    display: block; /* O conteúdo aparece ao passar o mouse */
+    display: block; 
 }
 
 main {
@@ -120,6 +152,31 @@ footer {
 .footer-contact p {
     margin-bottom: 10px;
 }
+
+/* Estilo do banner com degradê */
+.banner {
+    height: 300px;
+    background: linear-gradient(to right, #0066cc, #e0ff00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Estilos adicionais para a seção da banner */
+.highlight {
+    color: yellow; /* Destaca "Vôlei de Praia" em amarelo */
+}
+
+
+
 
    
 
