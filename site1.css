@@ -29,7 +29,7 @@ nav ul {
 }
 
 nav ul li {
-    position: relative;
+    position: relative; /* Isso é necessário para o dropdown funcionar */
     margin: 0 15px;
 }
 
@@ -45,7 +45,7 @@ nav ul li:hover a {
 }
 
 .dropdown-content {
-    display: none;
+    display: none; /* Inicialmente, o conteúdo do dropdown não aparece */
     position: absolute;
     background-color: white;
     min-width: 150px;
@@ -62,14 +62,16 @@ nav ul li:hover a {
     color: #333;
     padding: 12px 16px;
     display: block;
+    text-decoration: none;
 }
 
 .dropdown-content li a:hover {
     background-color: #ddd;
 }
 
+/* Torna o dropdown visível quando o mouse passa sobre o item pai */
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; /* O conteúdo aparece ao passar o mouse */
 }
 
 main {
@@ -118,6 +120,10 @@ footer {
 .footer-contact p {
     margin-bottom: 10px;
 }
+
+   
+
+
 
 
 
