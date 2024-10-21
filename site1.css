@@ -47,11 +47,42 @@ main {
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    width: 22%;
+}
+
+.footer-column h3 {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-contact {
+    text-align: center;
+    color: white;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
 
     
